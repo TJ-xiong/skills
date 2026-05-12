@@ -1,0 +1,23 @@
+{
+  "skill_name": "tjx-flask-init",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我初始化一个Flask项目，项目名叫 healthcare_api，我要用 Blueprint 风格的路由，需要 Celery 做异步任务，数据库迁移也要有，common 模块里的工具全部都要。项目是给医院用的，需要 user 和 patient 两个模块。",
+      "expected_output": "Flask project scaffold named healthcare_api with skeleton code (pass placeholders), Blueprint-style routing, Celery tasks, Flask-Migrate, all common utilities, user/patient API modules. MySQL connection test on startup. Infrastructure code (response/exceptions/auth) fully implemented.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a Flask project called `todo-api` with Flask-RESTful routing. I don't need Celery or migrations. Just give me the basic structure with unified response format and exception handling in the common module. Include a task model and a user model.",
+      "expected_output": "Flask project scaffold named todo-api with skeleton code, Flask-RESTful Resource-style routing, no Celery, no Migrate, only response and exceptions in common module, task and user API modules. MySQL connection test on startup.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我要建一个 Flask 后端，项目名就叫 my_backend，用默认配置就行，路由用 Blueprint。不需要 Celery，迁移要的。common 里放统一响应和异常处理就够了，其他不用。加一个商品模块和用户模块。",
+      "expected_output": "Flask project scaffold named my_backend with skeleton code, Blueprint routing, Flask-Migrate, no Celery, only response and exceptions in common module, product and user API modules. MySQL connection test on startup. Code comments in Chinese.",
+      "files": []
+    }
+  ]
+}
